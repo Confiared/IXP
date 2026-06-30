@@ -104,20 +104,6 @@ foreach($listvm as $vmIPv6)
     if($returnvar!=0)
         die('problema del entorno de preuba, perfavor informar el admin y indicarle el numero '.__LINE__.' y servidor '.$vmIPv6);
 }
-/*
-{
-  "name":"La Otra Red LPEA",
-  "asn":199343,
-  "ipv4rangelist":[],
-  "ipv6rangelist":[
-    "2a0a:6040:9800::\/48"
-  ],
-  "ipv4list":[],
-  "ipv6list":[],
-  "peer4":"172.23.255.0",
-  "peer6":"2803:1920:0:1::fff0"
-}
-*/
 if(isset($data['peer4']))
 foreach($listsrvBGP4 as $BGPIPv4)
 {
